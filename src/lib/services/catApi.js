@@ -2,6 +2,8 @@
  * 메인 페이지에 표시할 고양이 데이터를 가져옵니다.
  * @returns {Promise<Array>} 고양이 데이터 배열
  */
+// TODO: 실습:
+// getCats 함수는 /api/cat-img-list 경로로 route handler 에서 호출되도록 구현해 보세요.
 export async function getCats() {
   const res = await fetch(
     `https://api.thecatapi.com/v1/images/search?api_key=${process.env.CAT_API_KEY}&limit=8&has_breeds=1`,
@@ -18,6 +20,8 @@ export async function getCats() {
  * 고양이 품종 목록을 가져옵니다.
  * @returns {Promise<Array>} 고양이 품종 데이터 배열
  */
+// TODO: 실습:
+// getCatBreeds 함수는 /api/cat-breed-list 경로로 route handler 에서 호출되도록 구현해 보세요.
 export async function getCatBreeds() {
   const res = await fetch(
     `https://api.thecatapi.com/v1/breeds?api_key=${process.env.CAT_API_KEY}&limit=8`,
@@ -35,6 +39,8 @@ export async function getCatBreeds() {
  * @param {string} id - 고양이 품종 ID
  * @returns {Promise<Array>} 고양이 데이터 배열
  */
+// TODO: 실습:
+// getCatById 함수는 /api/cat-breed-list/[id] 경로로 route handler 에서 호출되도록 구현해 보세요.
 export async function getCatById(id) {
   const res = await fetch(
     `https://api.thecatapi.com/v1/images/search?api_key=${process.env.CAT_API_KEY}&breed_ids=${id}`,
@@ -52,6 +58,8 @@ export async function getCatById(id) {
  * @param {string} id - 고양이 품종 ID
  * @returns {Promise<Array>} 고양이 데이터 배열
  */
+// TODO: 실습:
+// getCatByIdClient 함수는 /api/cat-breed-list/[id] 경로로 route handler 에서 호출되도록 구현해 보세요.
 export async function getCatByIdClient(id) {
   const res = await fetch(
     `https://api.thecatapi.com/v1/images/search?breed_ids=${id}`,
