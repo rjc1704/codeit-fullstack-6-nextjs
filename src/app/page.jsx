@@ -18,7 +18,7 @@ export default async function Home() {
       <h1 className="text-2xl mb-4">The Cat API</h1>
 
       <main>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-1">
           {cats.map((cat) => (
             <div key={cat.id} className="border">
               <figure className="h-48">
