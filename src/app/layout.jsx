@@ -7,11 +7,6 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata = {
   title: "고양이 정보 사이트",
@@ -21,9 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`antialiased`}>
         <Header />
         {children}
       </body>

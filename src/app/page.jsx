@@ -1,5 +1,5 @@
 import CatCard from "@/components/ui/CatCard";
-import PageContainer from "@/components/ui/PageContainer";
+import PageContainer from "@/components/common/PageContainer";
 import { getCats } from "@/lib/services/catApi";
 import CatCardList from "@/components/ui/CatCardList";
 import Image from "next/image";

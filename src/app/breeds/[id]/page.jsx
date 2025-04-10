@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import PageContainer from "@/components/ui/PageContainer";
+import PageContainer from "@/components/common/PageContainer";
 import CatDetail from "@/components/ui/CatDetail";
 import Loading from "@/components/ui/Loading";
 import ErrorDisplay from "@/components/ui/ErrorDisplay";

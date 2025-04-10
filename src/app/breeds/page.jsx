@@ -1,5 +1,5 @@
 import CatCardList from "@/components/ui/CatCardList";
-import PageContainer from "@/components/ui/PageContainer";
+import PageContainer from "@/components/common/PageContainer";
 import { getCatBreeds } from "@/lib/services/catApi";
 
 export default async function CatBreeds() {

@@ -1,4 +1,4 @@
-import PageContainer from "@/components/ui/PageContainer";
+import PageContainer from "@/components/common/PageContainer";
 import CatDetail from "@/components/ui/CatDetail";
 import { getCatById } from "@/lib/services/catApi";
 import BreedDetailHeader from "@/app/breeds/[id]/_components/BreedDetailHeader";
