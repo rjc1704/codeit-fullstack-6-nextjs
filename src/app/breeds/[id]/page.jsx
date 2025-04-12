@@ -2,8 +2,6 @@ import PageContainer from "@/components/common/PageContainer";
 import CatDetail from "@/components/ui/CatDetail";
 import { getCatById } from "@/lib/services/api/catApi";
 import BreedDetailHeader from "./_components/BreedDetailHeader";
-import CommentForm from "./_components/CommentForm";
-import CommentList from "./_components/CommentList";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   // read route params
@@ -27,8 +25,6 @@ export default async function CatBreedPage({ params }) {
     <PageContainer title={cat.breeds[0].name}>
       <BreedDetailHeader breed={cat.breeds[0]} />
       <CatDetail cat={cat} />
-      <CommentForm breedId={id} />
-      <CommentList breedId={id} />
     </PageContainer>
   );
 }
