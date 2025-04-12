@@ -28,6 +28,7 @@ export async function addComment({ breedId, content }) {
 
 // 댓글 목록 조회 함수도 같은 파일에서 관리
 export async function getComments(breedId) {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   const response = await fetch(
     `http://localhost:4000/comments?breedId=${breedId}&_sort=createdAt&_order=desc`,
   );
